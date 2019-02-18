@@ -61,5 +61,22 @@ list down the assumptions you have made along the way.
  Optional: If you can send us the link to the running application that would be a
 plus.
 ```
+##### Assumptions
+
+    All of the last dates are kept in minutes for easy tests and recreation of situations.
 
 ##### Plan Of Attack:
+
+The most important and major issue in this was to build and deploy a smart contract that will and should fire a funcionality in our case the function of declaring a winner at a certain point in time which after crossing the last date of voting will declare a winner which is a problem as smart contracts are not designed to be able run them self automatically atleast not in ethereum. 
+
+###### so then how we will solve this??
+
+Well we have an Orcalize library to the rescue. This library allows us to call a functionality out side of our smart contract on or not on a specific time in future.
+
+But for this we will be very much in need of a special type of ethereum node that can support the orcalize library. We could have gone with Ethereum Infura, but lets save that thing for some future production grade work. For now for our this POC lets say we want to use the local environment and hence we are using the 
+
+Ethereum-bridge,
+trufffle, and
+ganache-cli
+
+for this purpose.
